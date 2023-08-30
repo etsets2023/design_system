@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinzanav:#F8F5FF;
+    --black:#000;
+    --roxobotao:#845EF7;
+    --branco: #FFF;
+    --cinzasobre:#FAFAFA;
+    --borda:#D3D7DB;
+    --pretoinout:#30373E;
+    --cinzaplace:#ADB5BD;
+    --roxoservicos:#5A27F2;
+}
+
+.hide_mobile {
+    display: none;
+}
+
+nav {
+    border-radius: 0px 0px 32px 32px;
+    background: var(--cinzanav);
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px;   
+}
+
+.nav_menu_burguer, .nav_lupa {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.projetos {
+    width: 100%;
+    padding: 15px 15px 20px 15px;
+    display: flex;
+
+}
+
+.projetos_imagem {
+    width: 100%;
+    object-fit: cover;
+}
+
+.projetos_texto {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.projetos_texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.projetos_texto p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%; 
+    width: 201px;
+    margin-bottom: 20px;
+}
+
+.projetos button {
+    border-radius: 8px;
+    background: var(--roxobotao);
+    padding: 13px 32px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sobre {
+    width: 100%;
+    padding: 20px 15px 15px 15px;
+    background-color: var(--cinzasobre);
+}
+
+.title {
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+}
+
+.lorem {
+    width: 100%;
+    padding: 15px;
+}
+
+.lorem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.lorem_conteudo_texto {
+    border-radius: 16px;
+    border: 1px solid var(--borda);
+    background: var(--branco);
+    padding: 15px;
+    height: 225px;
+
+}
+
+.lorem_conteudo_texto h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 180%; 
+}
+
+.lorem_conteudo_texto button {
+    width: 260px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid var(--roxobotao);
+    padding: 13px 32px;
+    color: var(--roxobotao);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; 
+    margin: 24px 0 41px 0;
+    cursor: pointer;
+}
+
+.outros {
+    width: 100%;
+    padding: 0 15px 15px 15px;
+}
+
+.outros_conteudo_item {
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.outros_conteudo_item img {
+    margin-bottom: 15px;
+}
+
+.outros_conteudo_item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 180%; 
+    margin-bottom: 15px;
+}
+
+.outros_conteudo_item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+}
+
+.trabalhamos {
+    width: 100%;
+    padding: 15px;
+}
+
+.trabalhamos img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.trabalhamos h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.trabalhamos p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    margin-bottom: 20px;
+}
+
+.botao_mais {
+    border-radius: 8px;
+    background: var(--roxobotao);
+    padding: 13px 32px;
+    width: 137px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botato_contrate {
+    border-radius: 8px;
+    border: 1px solid var(--roxobotao);
+    padding: 13px 32px;
+    width: 137px;
+    color: var(--roxobotao);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; 
+    padding: 5px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.vantagens {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cinzasobre);
+}
+
+.vantagens_conteudo_item {
+    display: flex;
+    border-radius: 16px;
+    border: 1px solid var(--borda);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.vantagens img {
+    width: 40px;
+    height: 40px;
+}
+
+.vantagens p {
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+    margin-left: 20px;
+}
+
+.servicos {
+    width: 100%;
+    padding: 15px;
+}
+
+.conteudo_item_imagem {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 15px;
+}
+
+.servicos_conteudo_item {
+    width: 100%;
+    background-color: var(--cinzasobre);
+    border-radius: 8px;
+    margin-bottom: 15px; 
+    padding-bottom: 15px;
+}
+
+.conteudo_item_detalhe {
+    display: flex;
+    gap:130px;
+}
+
+.servicos h3 {
+    color: var(--roxoservicos);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700; 
+    margin-left: 15px;
+}
+
+.servicos p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+    margin-left: 15px;
+}
+
+.servicos a {
+    cursor: pointer;
+}
+
+.formulario {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--black);
+}
+
+.title_form {
+    color: var(--branco);
+}
+
+.formulario_item, .formulario select {
+    width: 100%;
+    height: 52px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background-color: var(--pretoinout);
+    border: 1px solid var(--cinzaplace);
+}
+.check_conteudo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input[type=placeholder], [type=date] {
+    color: var(--cinzaplace);
+}
+
+.cidade {
+    color: var(--cinzaplace);
+}
+
+input[type=checkbox]  {
+    width: 24px;
+    height: 24px;
+}
+
+.check_label {
+    color: var(--branco);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.formulario button {
+    border-radius: 8px;
+    background: var(--roxobotao);
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.formulario p {
+    color: var(--branco);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%; 
+    letter-spacing: 0.14px;
+}
+
+footer {
+    width: 100%;
+    padding: 15px 15px 30px 15px;
+    background-color: var(--black)
+}
+
+.footer_logo {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; 
+}
+
+.footer_sociais {
+    margin-top: 20px;  
+}
+
+.footer_sociais img {
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.lista_vant {
+    color: var(--roxobotao);
+}
+
+footer p {
+    color: var(--branco);
+    margin: 0 0 30px 5px;
+  
+}
+
+.footer_sociais {
+    align-self: flex-end;
+}
+
+
+@media (min-width: 768px) {
+
+    .nav_menu {
+        padding: 20px 30px 20px 30px; 
+    }
+    
+    .projetos {
+        padding: 15px 30px 20px 30px;
+        margin-top: 20px;
+    }
+    
+    .projetos_texto {
+         margin-left: 40px;
+         margin-top: 40px;
+    }
+        
+    .projetos_texto h2 {
+        width:588px;
+        font-size: 72px;
+        font-weight: 800;
+         margin-bottom: 15px;
+    }
+    
+    .projetos_texto p {
+        width: 367px;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+    
+    .projetos button {
+        height: 58px;
+        font-size: 18px;
+    }
+    
+    .projetos_imagem {
+        height: 662px;
+        border-radius: 24px;
+    }
+    
+    .sobre {
+        padding: 20px 30px 15px 30px;
+        margin-top: 20px;
+    }
+    
+    .title {
+        font-size: 48px;
+    }
+    
+    .sobre p {
+        font-size: 18px;
+    }
+    
+    .lorem {
+        padding: 30px 30px 0 30px;
+        margin-bottom: 15px;
+    }
+    
+    .lorem img {
+        height: 454px;
+    }
+    
+    .lorem_conteudo_texto {
+       padding: 30px;
+       display: flex;
+       justify-content: space-between;
+       border-radius: 32px;
+    }
+    
+    .lorem button {
+        font-size: 18px;
+        height: 58px;
+        width: 108px;
+    }
+    .lorem h3 {
+        width: 400px;
+        font-size: 18px;
+    }
+    
+    .outros {
+        padding: 0 30px 30px 30px ;
+        margin-top: 0;
+    }
+    
+    .outros_conteudo_item {
+        display: flex;
+        height: 216px ;
+        padding: 40px;
+        border-radius: 32px;
+    }
+    
+    .outros_item img {
+        width: 108px;
+    }
+    
+    .outros h3 {
+        font-size: 18px;
+    }
+    
+    .outros p {
+        font-size: 16px;
+    }
+    
+    .texto_cubo {
+        margin-left: 80px;
+    }
+    
+    .trabalhamos {
+        padding: 30px;
+    }
+    
+    .trabalhamos img {
+        height: 284px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .trabalhamos h3 {
+        font-size: 24px;
+    }
+    
+    .trabalhamos p {
+        font-size: 16px;
+    }
+    
+    .trabalhamos button {
+        margin-right: 30px;
+    }
+    
+    .vantagens {
+        padding: 40px 30px 40px 30px;
+    }
+    
+    .vantagens p {
+        font-size: 16px;
+    }
+    
+    .vantagens_couteudo {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 3fr 1fr 3r;
+        gap: 15px;
+        grid-template-areas:
+           "globo prancheta"
+           "globo fabrica"
+           "globo fabrica"
+           "grafico cronometro"
+           "aviao globo2"
+           "aviao globo2"
+           ;
+    }
+    
+        .globo {grid-area: globo}
+        .prancheta {grid-area: prancheta}
+        .cronometro {grid-area: cronometro}
+        .grafico {grid-area: grafico}
+        .aviao {grid-area: aviao}
+        .fabrica {grid-area: fabrica}
+        .globo2 {grid-area: globo2}
+    
+        .globo2 {
+            height: 300px;
+    }
+    
+    .vantagens_conteudo_item {
+        margin: 0;
+    }
+    
+    .servicos {
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .conteudo_item_imagem {
+        width: 355px;
+        height: 165px;
+    }
+    .servicos_conteudo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap:10px;
+    }
+    
+    .servicos_conteudo_item {
+        margin: 0;
+    }
+    
+    .servicos h3 {
+        font-size: 24px;
+    }
+    
+    .servicos p {
+        font-size: 16px;
+        width: 284px;
+    }
+    
+    .formulario {
+        padding: 40px 30px 30px 30px;
+    }
+    
+    .formulario_item, .formulario select {
+        width: 570px;
+    }
+    
+    .concluir {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 600px;
+        display: grid;
+        grid-template-columns: 28% 72%;
+        grid-template-areas:
+        "botaobotao concordo"
+        ;
+    }
+    
+        .concordo {grid-area: concordo}
+        .botaobotao {grid-area: botaobotao}
+    
+    .formulario button {
+        width: 143px;
+        height: 58px;
+        font-size: 18px;
+    }
+    
+    .formulario p {
+        width: 550px;
+        font-size: 16px;
+    }
+    
+    .check_label {
+        font-size: 14px;
+    }
+    
+    .footer_texto {
+        margin-left: 20px;
+        color: var(--branco);
+    }
+    
+    .footer_logo {
+        margin-left: 50px;
+    }
+    
+    a {
+        font-size: 16px;
+    }
+    
+    .texto_detalhes {
+        width: 650px;
+        height: 180px;
+        margin-left: 20px;
+        display: grid; 
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas: 
+        "social lista1 lista2";
+    
+        .lista1 {grid-area: lista1}
+        .lista2 {grid-area: lista2}
+        .social {grid-area: social}
+    }
+    .social {
+        margin-bottom: 200px;
+    }
+    
+    .footer_lista, .lista2 {
+        margin-top: 40px;
+    }
+    
+    }
+
+   .nav_menu_burguer {
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.3);
+        background: var(--roxobotao);
+    }
+   }
+
+   .nav_lupa {
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.3);
+        background: var(--roxobotao);
+    }
+   }
+
+   .projetos_botao {
+    animation: botprojetos 2s linear infinite;
+   }
+
+   @keyframes botprojetos {
+    0% {
+        background-color: var(--roxobotao);
+    }
+
+    100% {
+        background-color: #180749;
+    }
+   }
+
+   .lorem_botao {
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.3);
+        background: var(--roxobotao);
+        color: var(--branco);
+    }
+   }
+
+   .botao_mais {
+       transition: all 2s;
+
+    &:hover {
+        transform: scale(1.3);
+        background: var(--roxobotao);
+    }
+   }
+
+   .botato_contrate {
+       transition: all 2s;
+
+    &:hover {
+        transform: scale(1.3);
+        background: var(--roxobotao);
+        color: var(--branco);
+    }
+   }
+
+   .botao_concluir {
+       transition: all 2s;
+
+    &:hover {
+        transform: scale(1.3);
+        background: var(--roxobotao);
+    }
+   }
+
+   .flecha {
+       transition: all 2s;
+
+    &:hover {
+        transform: scale(1.3);
+        background: var(--roxobotao);
+    }
+   }
+   
+   .vantagens_conteudo_item {
+       transition: all 2s;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 10px 0 var(--roxobotao);
+    }
+   }
+
+   .servicos p {
+    transition: all 2s;
+
+    &:hover {
+       transform: translateY(-20px);
+    }
+   }
+
+  .footer_nav {
+       transition: all 2s;
+
+    &:hover {
+       border: 4px solid var(--roxobotao);
+       border-left:transparent;
+       border-top: transparent;
+       border-right: transparent ;
+    }
+
+    &:focus {
+        color: var(--roxoservicos);
+    }
+  }
+
+  .sobre_paragrafo {
+    animation: fade ease 10s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fade {
+    0% {
+        opacity: 0,2;
+    }
+
+    50% {
+        opacity: 0,5;
+    }
+     
+    75% {
+        opacity: 0,7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+  
+.formulario_item {
+
+    &:invalid {
+        box-shadow: 0 0 15px 0 red;
+    }
+}
+   

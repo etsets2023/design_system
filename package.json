@@ -1,0 +1,14 @@
+{
+  "name": "design_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/style.scss:dist/style.css"
+  },
+  "author": "Elaine Tavares",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}
